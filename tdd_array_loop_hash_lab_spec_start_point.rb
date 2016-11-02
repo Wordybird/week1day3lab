@@ -38,7 +38,23 @@ class Lab < MiniTest::Test
 
 
   def test_array_of_capitals
+    countries = {
+      uk: {
+        capital: 'London',
+        population: 60
+      },
+      france: {
+        capital: 'Paris',
+        population: 70
+      },
+      italy: {
+        capital: 'Rome',
+        population: 56
+      }
+    }
 
+    result=array_of_capitals(countries)
+    assert_equal("London, Paris, Rome",result)
   end
 
 end

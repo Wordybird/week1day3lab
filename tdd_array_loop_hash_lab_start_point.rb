@@ -28,3 +28,10 @@ def first_key_name(teacher_wallets)
     return first_key
   end
 end
+
+def array_of_capitals(countries)
+  for capitals in countries
+    capitals = countries
+    return "#{countries[:uk][:capital]}, #{countries[:france][:capital]}, #{countries[:italy][:capital]}"
+  end
+end
